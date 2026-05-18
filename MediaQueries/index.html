@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./mediaQueries.css">
+
+    <title>Media Queries</title>
+</head>
+<body>
+    <a href="/index.html" class="botao-home">🏠 Home</a>
+
+    <h1>Media Queries</h1>
+
+    <section>
+        <h2>O que são Media Queries?</h2>
+
+        <p>
+            As Media Queries são recursos do CSS utilizados para tornar páginas web responsivas,
+            permitindo que o layout se adapte a diferentes tamanhos de tela, como celulares,
+            tablets e computadores.
+        </p>
+
+        <p>
+            Com elas, é possível alterar estilos dependendo da largura, altura,
+            resolução ou orientação da tela do dispositivo. Esse recurso é muito
+            utilizado no desenvolvimento web moderno para melhorar a experiência do usuário.
+        </p>
+    </section>
+
+    <section>
+        <h2>Como funcionam?</h2>
+
+        <p>
+            As Media Queries funcionam verificando características do dispositivo.
+            Quando determinada condição é atendida, o CSS aplica estilos diferentes.
+        </p>
+
+        <p>
+            Um exemplo comum é alterar o layout quando a largura da tela fica menor
+            que 800 pixels, adaptando o conteúdo para celulares.
+        </p>
+    </section>
+
+    <section>
+        <h2>Exemplo de Media Query</h2>
+
+        <p>
+            Exemplo de código:
+        </p>
+
+<pre>
+<code>
+<span class="rosa">@media</span> (<span class="azul">max-width</span>: <span class="verde">800px</span>) {
+
+    <span class="amarelo">body</span> {
+
+        <span class="azul">background-color</span>: <span class="laranja">red</span>;
+
+    }
+}
+</code>
+</pre>
+
+        <p>
+            Nesse exemplo, quando a tela possuir largura menor que 800px,
+            a cor de fundo da página será alterada.
+        </p>
+    </section>
+
+    <section class="caixa">
+        <h2>Exemplo Prático</h2>
+
+        <p>
+            Redimensione a janela do navegador para visualizar as alterações de estilo
+            acontecendo em tempo real através das Media Queries.
+
+            Caso esteja utilizando um computador, clique com o botão direito na página,
+            selecione “Inspecionar” e depois clique no ícone de dispositivos móveis
+            para simular a visualização em celulares e tablets.
+        </p>
+    </section>
+
+    <section class="video-section">
+
+    <h2>Vídeo Explicativo</h2>
+
+    <p>
+        Assista ao vídeo abaixo para entender melhor o funcionamento
+        das Media Queries no desenvolvimento web.
+    </p>
+
+    <div class="video-container">
+
+        <iframe 
+            src="https://www.youtube.com/embed/9rY8V2rvP2o"
+            title="Vídeo sobre Media Queries"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+</body>
+</html>

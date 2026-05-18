@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./flexbox.css">
+
+    <title>Layouts Flexíveis - Flexbox</title>
+</head>
+<body>
+
+    <a href="/index.html" class="botao-home">🏠 Home</a>
+
+    <h1>Layouts Flexíveis (Flexbox)</h1>
+
+    <section>
+
+        <h2>O que é Flexbox?</h2>
+
+        <p>
+            Flexbox é um recurso do CSS utilizado para organizar elementos
+            de maneira flexível dentro de um container.
+        </p>
+
+        <p>
+            Ele facilita o alinhamento, espaçamento e distribuição dos elementos
+            em linhas ou colunas, sendo muito utilizado no desenvolvimento
+            de interfaces modernas e responsivas.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Como funciona?</h2>
+
+        <p>
+            Para utilizar o Flexbox, é necessário aplicar
+            <strong>display: flex</strong> em um elemento container.
+        </p>
+
+        <p>
+            A partir disso, os elementos internos podem ser alinhados,
+            centralizados e organizados de diversas formas utilizando
+            propriedades como:
+        </p>
+
+        <ul>
+            <li>justify-content</li>
+            <li>align-items</li>
+            <li>flex-direction</li>
+            <li>gap</li>
+        </ul>
+
+    </section>
+
+    <section>
+
+        <h2>Exemplo de código</h2>
+
+<pre>
+<code>
+<span class="azul">.container</span> {
+
+    <span class="rosa">display</span>: <span class="laranja">flex</span>;
+
+    <span class="rosa">justify-content</span>: <span class="verde">center</span>;
+
+    <span class="rosa">gap</span>: <span class="verde">20px</span>;
+}
+</code>
+</pre>
+
+    </section>
+
+    <section class="demonstracao">
+
+        <h2>Exemplo Prático</h2>
+
+        <p>
+            Os blocos abaixo estão organizados utilizando Flexbox.
+            Redimensione a tela para visualizar o comportamento responsivo.
+        </p>
+
+        <div class="container-flex">
+
+            <div class="caixa">Caixa 1</div>
+
+            <div class="caixa">Caixa 2</div>
+
+            <div class="caixa">Caixa 3</div>
+
+        </div>
+
+    </section>
+
+    <section class="video-section">
+
+    <h2>Vídeo Explicativo</h2>
+
+    <p>
+        Assista ao vídeo abaixo para entender melhor o funcionamento
+        das Media Queries no desenvolvimento web.
+    </p>
+
+    <div class="video-container">
+
+        <iframe 
+            src="https://www.youtube.com/embed/YeGn9nGies0"
+            title="Vídeo sobre Media Queries"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+</body>
+</html>

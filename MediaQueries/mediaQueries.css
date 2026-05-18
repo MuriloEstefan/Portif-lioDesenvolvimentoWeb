@@ -1,0 +1,170 @@
+/* Estilo padrão do site */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(to right, #eef2f3, #dfe9f3);
+
+    color: #222;
+
+    padding: 30px;
+
+    transition: 0.5s;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.caixa {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 
+MEDIA QUERY
+Quando a tela tiver no máximo 800px,
+os estilos abaixo serão aplicados
+*/
+
+@media (max-width: 800px) {
+
+    body {
+        background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+        color: white;
+    }
+
+    h1 {
+        color: #61dafb;
+    }
+
+    .caixa {
+        background-color: #444;
+    }
+
+    pre {
+        background-color: #282c34;
+    }
+    
+     .video-container iframe {
+
+        width: 100%;
+
+        height: 250px;
+    }
+}
+
+pre {
+    background-color: #282c34;
+    padding: 20px;
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    overflow-x: auto;
+
+    box-shadow: 0px 4px 10px rgba(122, 114, 114, 0.3);
+
+    transition: 0.3s ease;
+}
+
+pre:hover {
+    transform: scale(1.02);
+
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.5);
+}
+
+/* CORES DO CÓDIGO */
+
+.rosa {
+    color: #c586c0;
+}
+
+.azul {
+    color: #9cdcfe;
+}
+
+.verde {
+    color: #b5cea8;
+}
+
+.amarelo {
+    color: #dcdcaa;
+}
+
+.laranja {
+    color: #ce9178;
+}
+
+.botao-home {
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+
+    background-color: #282c34;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.botao-home:hover {
+    background-color: #3d4350;
+
+    transform: scale(1.05);
+}
+
+.video-section {
+
+    margin-top: 60px;
+
+    text-align: center;
+}
+
+.video-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.video-container iframe {
+
+    width: 80%;
+
+    max-width: 900px;
+
+    height: 500px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
+
+    transition: 0.3s ease;
+}
+
+.video-container iframe:hover {
+
+    transform: scale(1.01);
+}
