@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(to right, #eef2f3, #dfe9f3);
+
+    color: #222;
+
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+
+    color: darkblue;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.caixa {
+    background-color: lightgray;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+/* EXEMPLO GRID */
+
+.grid-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.grid-item {
+
+    background-color: steelblue;
+
+    color: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.grid-item:hover {
+
+    transform: scale(1.05);
+
+    background-color: rgb(42, 93, 136);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    body {
+
+        background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+
+        color: white;
+    }
+
+    h1 {
+
+        color: #61dafb;
+    }
+
+    .caixa {
+
+        background-color: #444;
+    }
+
+    .grid-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    pre {
+
+        background-color: #282c34;
+    }
+
+    .video-container iframe {
+
+        width: 100%;
+
+        height: 250px;
+    }
+}
+
+/* CÓDIGO */
+
+pre {
+
+    background-color: #282c34;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    overflow-x: auto;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* CORES */
+
+.rosa {
+    color: #c586c0;
+}
+
+.azul {
+    color: #9cdcfe;
+}
+
+.verde {
+    color: #b5cea8;
+}
+
+.amarelo {
+    color: #dcdcaa;
+}
+
+.laranja {
+    color: #ce9178;
+}
+
+/* BOTÃO HOME */
+
+.botao-home {
+
+    position: fixed;
+
+    top: 20px;
+
+    left: 20px;
+
+    background-color: #282c34;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.botao-home:hover {
+
+    transform: scale(1.05);
+
+    background-color: #3d4350;
+}
+
+/* VÍDEO */
+
+.video-section {
+
+    margin-top: 60px;
+
+    text-align: center;
+}
+
+.video-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.video-container iframe {
+
+    width: 80%;
+
+    max-width: 900px;
+
+    height: 500px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
+}

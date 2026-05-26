@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./gridLayoutProfissional.css">
+
+    <title>CSS Grid Layout Profissional</title>
+</head>
+<body>
+
+    <a href="../index.html" class="botao-home">🏠 Home</a>
+
+    <h1>CSS Grid Layout Profissional</h1>
+
+    <section>
+        <h2>O que é CSS Grid Layout?</h2>
+
+        <p>
+            O CSS Grid Layout é um recurso do CSS criado para facilitar a construção
+            de layouts modernos e organizados em páginas web.
+        </p>
+
+        <p>
+            Ele permite dividir a página em linhas e colunas, tornando muito mais fácil
+            posicionar elementos de forma precisa e responsiva.
+        </p>
+
+        <p>
+            O Grid é bastante utilizado em sistemas administrativos, dashboards,
+            galerias de imagens, páginas institucionais e diversos outros tipos
+            de interfaces modernas.
+        </p>
+    </section>
+
+    <section>
+        <h2>Como funciona?</h2>
+
+        <p>
+            Para utilizar o Grid Layout, primeiro definimos um container com
+            <strong>display: grid</strong>.
+        </p>
+
+        <p>
+            Depois disso, podemos criar colunas e linhas utilizando propriedades como:
+        </p>
+
+        <ul>
+            <li>grid-template-columns</li>
+            <li>grid-template-rows</li>
+            <li>gap</li>
+            <li>justify-content</li>
+            <li>align-items</li>
+        </ul>
+
+        <p>
+            Isso permite criar estruturas organizadas sem precisar utilizar vários
+            posicionamentos complexos.
+        </p>
+    </section>
+
+    <section>
+        <h2>Exemplo de Código</h2>
+
+<pre>
+<code>
+<span class="amarelo">.container</span> {
+
+    <span class="azul">display</span>: <span class="laranja">grid</span>;
+
+    <span class="azul">grid-template-columns</span>: <span class="verde">1fr 1fr 1fr</span>;
+
+    <span class="azul">gap</span>: <span class="verde">20px</span>;
+}
+
+<span class="amarelo">.item</span> {
+
+    <span class="azul">background-color</span>: <span class="laranja">steelblue</span>;
+
+    <span class="azul">color</span>: <span class="laranja">white</span>;
+
+    <span class="azul">padding</span>: <span class="verde">20px</span>;
+}
+</code>
+</pre>
+
+        <p>
+            Nesse exemplo, o container foi dividido em 3 colunas iguais utilizando
+            a propriedade <strong>grid-template-columns</strong>.
+        </p>
+    </section>
+
+    <section class="caixa">
+        <h2>Exemplo Prático</h2>
+
+        <p>
+            Abaixo temos uma demonstração visual de um layout utilizando CSS Grid.
+        </p>
+
+        <div class="grid-container">
+
+            <div class="grid-item">Item 1</div>
+
+            <div class="grid-item">Item 2</div>
+
+            <div class="grid-item">Item 3</div>
+
+            <div class="grid-item">Item 4</div>
+
+            <div class="grid-item">Item 5</div>
+
+            <div class="grid-item">Item 6</div>
+
+        </div>
+    </section>
+
+    <section class="video-section">
+
+        <h2>Vídeo Explicativo</h2>
+
+        <p>
+            Assista ao vídeo abaixo para entender melhor como o CSS Grid funciona
+            na prática.
+        </p>
+
+        <div class="video-container">
+
+            <iframe
+        src="https://www.youtube.com/embed/p8q2_VIk-2Y"
+        title="Vídeo sobre CSS Grid"
+        allowfullscreen>
+    </iframe>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
