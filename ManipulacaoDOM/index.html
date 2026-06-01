@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./dom.css">
+
+    <title>Manipulação do DOM e Eventos</title>
+</head>
+<body>
+
+    <a href="../index.html" class="botao-home">🏠 Home</a>
+
+    <h1>Manipulação do DOM e Eventos</h1>
+
+    <section>
+
+        <h2>O que é DOM?</h2>
+
+        <p>
+            DOM significa Document Object Model (Modelo de Objeto do Documento).
+            Ele representa toda a estrutura de uma página HTML em forma de objetos,
+            permitindo que o JavaScript acesse, modifique e interaja com os elementos da página.
+        </p>
+
+        <p>
+            Através do DOM, é possível alterar textos, cores, imagens,
+            adicionar elementos, remover conteúdos e criar interações dinâmicas.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>O que são Eventos?</h2>
+
+        <p>
+            Eventos são ações que acontecem na página e podem ser detectadas
+            pelo JavaScript.
+        </p>
+
+        <p>
+            Alguns exemplos são:
+        </p>
+
+        <ul>
+            <li>Clique em um botão (click)</li>
+            <li>Movimento do mouse (mouseover)</li>
+            <li>Digitação em campos (keyup)</li>
+            <li>Envio de formulários (submit)</li>
+        </ul>
+
+        <p>
+            Os eventos tornam as páginas web interativas e permitem responder
+            às ações dos usuários em tempo real.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Exemplo de Código</h2>
+
+<pre>
+<code>
+<span class="rosa">const</span> texto = <span class="amarelo">document</span>.<span class="azul">getElementById</span>(<span class="laranja">"mensagem"</span>);
+
+<span class="rosa">function</span> <span class="verde">alterarTexto</span>() {
+
+    texto.<span class="azul">innerText</span> = <span class="laranja">"Texto alterado com JavaScript!"</span>;
+
+}
+</code>
+</pre>
+
+        <p>
+            Nesse exemplo, o JavaScript acessa um elemento HTML através do seu ID
+            e altera o texto exibido na página.
+        </p>
+
+    </section>
+
+    <section class="caixa">
+
+        <h2>Exemplo Prático</h2>
+
+        <p>
+            Clique no botão abaixo para manipular o DOM utilizando JavaScript.
+        </p>
+
+        <div class="exemplo-dom">
+
+            <p id="mensagem">
+                Este texto será alterado.
+            </p>
+
+            <button onclick="alterarTexto()">
+                Alterar Texto
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="video-section">
+
+        <h2>Vídeo Explicativo</h2>
+
+        <p>
+            Assista ao vídeo abaixo para aprender mais sobre DOM e Eventos.
+        </p>
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/0buVOT-pBtw"
+                title="Manipulação do DOM e Eventos"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+<script src="./script.js"></script>
+</body>
+</html>

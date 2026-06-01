@@ -1,6 +1,5 @@
-/* Estilo padrão do site */
-
 body {
+
     font-family: Arial, Helvetica, sans-serif;
 
     background: linear-gradient(to right, #eef2f3, #dfe9f3);
@@ -8,51 +7,100 @@ body {
     color: #222;
 
     padding: 30px;
-
-    transition: 0.5s;
 }
 
 h1 {
+
     text-align: center;
+
     color: darkblue;
 }
 
 section {
+
     margin-bottom: 30px;
 }
 
 .caixa {
+
     background-color: lightgray;
+
     padding: 20px;
+
     border-radius: 10px;
 }
 
-/* 
-MEDIA QUERY
-Quando a tela tiver no máximo 800px,
-os estilos abaixo serão aplicados
-*/
+/* EXEMPLO PRÁTICO */
+
+.exemplo-dom {
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.exemplo-dom p {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.exemplo-dom button {
+
+    background-color: #282c34;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.exemplo-dom button:hover {
+
+    transform: scale(1.05);
+
+    background-color: #3d4350;
+}
+
+/* RESPONSIVIDADE */
 
 @media (max-width: 800px) {
 
     body {
+
         background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+
         color: white;
     }
 
     h1 {
+
         color: #61dafb;
     }
 
     .caixa {
+
         background-color: #444;
     }
 
     pre {
+
         background-color: #282c34;
     }
-    
-     .video-container iframe {
+
+    .video-container iframe {
 
         width: 100%;
 
@@ -60,26 +108,28 @@ os estilos abaixo serão aplicados
     }
 }
 
-pre {
-    background-color: #282c34;
-    padding: 20px;
-    border-radius: 12px;
+/* BLOCO DE CÓDIGO */
 
-    font-size: 15px;
+pre {
+
+    background-color: #1e1e1e;
 
     color: #e5e7eb;
 
+    padding: 20px;
+
+    border-radius: 12px;
+
     overflow-x: auto;
 
-    box-shadow: 0px 4px 10px rgba(122, 114, 114, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 pre:hover {
-    transform: scale(1.02);
 
-    box-shadow: 0px 6px 20px rgba(0,0,0,0.5);
+    transform: scale(1.02);
 }
 
 /* CORES DO CÓDIGO */
@@ -104,7 +154,10 @@ pre:hover {
     color: #ce9178;
 }
 
+/* BOTÃO HOME */
+
 .botao-home {
+
     position: fixed;
 
     top: 20px;
@@ -123,15 +176,16 @@ pre:hover {
     font-weight: bold;
 
     transition: 0.3s ease;
-
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
 }
 
 .botao-home:hover {
+
     background-color: #3d4350;
 
     transform: scale(1.05);
 }
+
+/* VÍDEO */
 
 .video-section {
 
@@ -162,11 +216,4 @@ pre:hover {
     border-radius: 15px;
 
     box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
-
-    transition: 0.3s ease;
-}
-
-.video-container iframe:hover {
-
-    transform: scale(1.01);
 }
