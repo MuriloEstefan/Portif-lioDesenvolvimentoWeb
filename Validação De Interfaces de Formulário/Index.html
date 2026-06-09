@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./validacaoFormulario.css">
+
+    <title>Validação de Interface de Formulário</title>
+</head>
+<body>
+
+    <a href="../index.html" class="botao-home">🏠 Home</a>
+
+    <h1>Validação de Interface de Formulário</h1>
+
+    <section>
+        <h2>O que é Validação de Formulário?</h2>
+
+        <p>
+            A validação de formulário é o processo de verificar se os dados
+            inseridos pelo usuário estão corretos antes do envio das informações.
+        </p>
+
+        <p>
+            Esse recurso melhora a experiência do usuário, reduz erros de preenchimento
+            e ajuda a garantir que os dados recebidos pelo sistema sejam válidos.
+        </p>
+    </section>
+
+    <section>
+        <h2>Por que utilizar?</h2>
+
+        <p>
+            Formulários estão presentes em praticamente todos os sistemas web,
+            como cadastros, logins e formulários de contato.
+        </p>
+
+        <p>
+            A validação evita campos vazios, e-mails inválidos e informações
+            incorretas que poderiam causar problemas no funcionamento da aplicação.
+        </p>
+    </section>
+
+    <section>
+        <h2>Exemplo de Validação HTML</h2>
+
+        <p>
+            Exemplo utilizando os atributos <strong>required</strong> e
+            <strong>type="email"</strong>.
+        </p>
+
+<pre>
+<code>
+&lt;<span class="rosa">form</span>&gt;
+
+    &lt;<span class="amarelo">input</span>
+        <span class="azul">type</span>=<span class="laranja">"email"</span>
+        <span class="azul">required</span>&gt;
+
+&lt;/<span class="rosa">form</span>&gt;
+</code>
+</pre>
+
+        <p>
+            Nesse exemplo, o navegador exige que o usuário informe um e-mail
+            válido antes de permitir o envio do formulário.
+        </p>
+    </section>
+
+    <section class="caixa">
+        <h2>Exemplo Prático</h2>
+
+        <p>
+            O formulário abaixo utiliza validações nativas do HTML.
+            Tente clicar em "Enviar" sem preencher os campos para visualizar
+            o comportamento do navegador.
+        </p>
+
+        <form class="formulario">
+
+            <input
+                type="text"
+                placeholder="Digite seu nome"
+                required>
+
+            <input
+                type="email"
+                placeholder="Digite seu e-mail"
+                required>
+
+            <input
+                type="password"
+                placeholder="Digite sua senha"
+                minlength="6"
+                required>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+    </section>
+
+    <section class="video-section">
+
+        <h2>Vídeo Explicativo</h2>
+
+        <p>
+            Assista ao vídeo abaixo para aprender mais sobre validação de
+            formulários em HTML.
+        </p>
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/uvzFT-TCVFM"
+                title="Validação de Formulários HTML"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
