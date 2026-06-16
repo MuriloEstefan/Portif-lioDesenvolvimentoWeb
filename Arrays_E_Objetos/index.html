@@ -1,0 +1,182 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./arraysObjetos.css">
+
+    <title>Arrays e Objetos</title>
+</head>
+<body>
+
+    <a href="../index.html" class="botao-home">🏠 Home</a>
+
+    <h1>Arrays e Objetos em JavaScript</h1>
+
+    <section>
+        <h2>O que são Arrays?</h2>
+
+        <p>
+            Arrays são estruturas utilizadas para armazenar vários valores
+            dentro de uma única variável.
+        </p>
+
+        <p>
+            Eles permitem organizar listas de informações, como nomes,
+            números, produtos ou qualquer outro tipo de dado.
+        </p>
+    </section>
+
+    <section>
+        <h2>Exemplo de Array</h2>
+
+<pre>
+<code>
+<span class="rosa">let</span> <span class="azul">frutas</span> = [
+
+    <span class="laranja">"Maçã"</span>,
+
+    <span class="laranja">"Banana"</span>,
+
+    <span class="laranja">"Laranja"</span>
+
+];
+</code>
+</pre>
+
+        <p>
+            Nesse exemplo, o array chamado <strong>frutas</strong>
+            armazena três valores diferentes.
+        </p>
+    </section>
+
+    <section>
+        <h2>O que são Objetos?</h2>
+
+        <p>
+            Objetos são estruturas que armazenam informações em pares
+            de chave e valor.
+        </p>
+
+        <p>
+            Eles são muito utilizados para representar entidades do mundo
+            real, como pessoas, produtos e veículos.
+        </p>
+    </section>
+
+    <section>
+        <h2>Exemplo de Objeto</h2>
+
+<pre>
+<code>
+<span class="rosa">let</span> <span class="azul">aluno</span> = {
+
+    <span class="amarelo">nome</span>: <span class="laranja">"Murilo"</span>,
+
+    <span class="amarelo">idade</span>: <span class="verde">17</span>,
+
+    <span class="amarelo">curso</span>: <span class="laranja">"Desenvolvimento Web"</span>
+
+};
+</code>
+</pre>
+
+        <p>
+            O objeto acima possui três propriedades: nome, idade e curso.
+        </p>
+    </section>
+
+    <section class="caixa">
+
+        <h2>Exemplo Prático</h2>
+
+        <p>
+            Clique no botão para visualizar informações armazenadas
+            em um objeto e em um array.
+        </p>
+
+        <button onclick="mostrarDados()">
+            Mostrar Dados
+        </button>
+
+    </section>
+
+    <section>
+        <h2>Arrays e Objetos Juntos</h2>
+
+        <p>
+            Em aplicações web, é muito comum utilizar arrays contendo
+            vários objetos.
+        </p>
+
+<pre>
+<code>
+<span class="rosa">let</span> <span class="azul">alunos</span> = [
+
+    { <span class="amarelo">nome</span>: <span class="laranja">"Ana"</span> },
+
+    { <span class="amarelo">nome</span>: <span class="laranja">"Carlos"</span> },
+
+    { <span class="amarelo">nome</span>: <span class="laranja">"João"</span> }
+
+];
+</code>
+</pre>
+
+        <p>
+            Essa estrutura é muito utilizada para armazenar e manipular
+            grandes quantidades de dados.
+        </p>
+
+    </section>
+
+    <section class="video-section">
+
+        <h2>Vídeo Explicativo</h2>
+
+        <p>
+            Assista ao vídeo abaixo para aprender mais sobre Arrays e Objetos.
+        </p>
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/XdkW62tkAgU"
+                title="Arrays e Objetos JavaScript"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        function mostrarDados() {
+
+            let frutas = [
+                "Maçã",
+                "Banana",
+                "Laranja"
+            ];
+
+            let aluno = {
+                nome: "Murilo",
+                idade: 17
+            };
+
+            alert(
+                "Primeira fruta: " + frutas[0] +
+                "\nNome: " + aluno.nome +
+                "\nIdade: " + aluno.idade
+            );
+
+        }
+
+    </script>
+
+</body>
+</html>
+```

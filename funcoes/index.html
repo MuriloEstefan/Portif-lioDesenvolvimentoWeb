@@ -1,0 +1,138 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./funcoes.css">
+
+    <title>Funções em JavaScript</title>
+</head>
+<body>
+
+    <a href="../index.html" class="botao-home">🏠 Home</a>
+
+    <h1>Funções em JavaScript</h1>
+
+    <section>
+        <h2>O que são Funções?</h2>
+
+        <p>
+            Funções são blocos de código criados para executar uma tarefa específica.
+            Elas permitem reutilizar código, tornando os programas mais organizados
+            e fáceis de manter.
+        </p>
+
+        <p>
+            Sempre que uma função é chamada, as instruções definidas dentro dela
+            são executadas.
+        </p>
+    </section>
+
+    <section>
+        <h2>Por que utilizar Funções?</h2>
+
+        <p>
+            Em aplicações web, diversas tarefas precisam ser executadas várias vezes,
+            como validar formulários, calcular valores ou exibir mensagens.
+        </p>
+
+        <p>
+            Utilizando funções, evitamos repetir código e deixamos o desenvolvimento
+            mais eficiente.
+        </p>
+    </section>
+
+    <section>
+        <h2>Exemplo de Função</h2>
+
+        <p>
+            O exemplo abaixo cria uma função chamada
+            <strong>saudacao()</strong>.
+        </p>
+
+<pre>
+<code>
+<span class="rosa">function</span> <span class="amarelo">saudacao</span>() {
+
+    <span class="amarelo">alert</span>(<span class="laranja">"Olá, mundo!"</span>);
+
+}
+</code>
+</pre>
+
+        <p>
+            Quando a função for chamada, uma mensagem será exibida para o usuário.
+        </p>
+    </section>
+
+    <section class="caixa">
+        <h2>Exemplo Prático</h2>
+
+        <p>
+            Clique no botão abaixo para executar uma função JavaScript.
+        </p>
+
+        <button onclick="mostrarMensagem()">
+            Executar Função
+        </button>
+
+    </section>
+
+    <section>
+        <h2>Funções com Parâmetros</h2>
+
+        <p>
+            As funções também podem receber informações chamadas parâmetros.
+        </p>
+
+<pre>
+<code>
+<span class="rosa">function</span> <span class="amarelo">saudar</span>(<span class="azul">nome</span>) {
+
+    <span class="amarelo">alert</span>(<span class="laranja">"Olá, "</span> + nome);
+
+}
+</code>
+</pre>
+
+        <p>
+            Nesse caso, o valor enviado para o parâmetro
+            <strong>nome</strong> será utilizado dentro da função.
+        </p>
+    </section>
+
+    <section class="video-section">
+
+        <h2>Vídeo Explicativo</h2>
+
+        <p>
+            Assista ao vídeo abaixo para aprender mais sobre funções em JavaScript.
+        </p>
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/mc3TKp2XzhI"
+                title="Funções JavaScript"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        function mostrarMensagem() {
+
+            alert("Função executada com sucesso!");
+
+        }
+
+    </script>
+
+</body>
+</html>
+```
